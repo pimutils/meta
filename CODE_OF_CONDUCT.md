@@ -75,9 +75,7 @@ members of the project's leadership.
 
 This Code of Conduct is adapted from:
 
-* the [Contributor Covenant][http://contributor-covenant.org], version 1.4,
-  available at
-  [http://contributor-covenant.org/version/1/4][http://contributor-covenant.org/version/1/4/]
+* the [Contributor Covenant](http://contributor-covenant.org), [version 1.4](http://contributor-covenant.org/version/1/4/)
 * the [FreeBSD Code of
   Conduct](https://www.freebsd.org/internal/code-of-conduct.html) from
   2016-08-23.
