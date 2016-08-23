@@ -1,5 +1,11 @@
 # Contributor Covenant Code of Conduct
 
+## The Project Maintainers
+
+- [Hugo Osvaldo Barrera](https://github.com/hobarrera)
+- [Christian Geier](https://github.com/geier)
+- [Markus Unterwaditzer](https://github.com/untitaker)
+
 ## Our Pledge
 
 In the interest of fostering an open and welcoming environment, we as
