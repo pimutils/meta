@@ -1,4 +1,4 @@
-# Contributor Covenant Code of Conduct
+# Pimutils Code of Conduct
 
 ## The Project Maintainers
 
