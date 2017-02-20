@@ -4,6 +4,6 @@ body:
 
 pimutils is a suite of programs for managing contacts, calendars and tasks on the command line.
 
-* [vdirsyncer](https://github.com/pimutils/vdirsyncer) can synchronize the data from khal and todoman with external servers
 * [khal](https://github.com/pimutils/khal) is a CLI calendar application
 * [todoman](https://github.com/pimutils/khal) is a CLI tasks application
+* [vdirsyncer](https://github.com/pimutils/vdirsyncer) can synchronize the data from khal and todoman with external servers
