@@ -1,5 +1,6 @@
 [project]
 name = pimutils
+url = https://pimutils.org
 
 [packages]
 lektor-atom = 0.2
