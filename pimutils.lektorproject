@@ -1,2 +1,5 @@
 [project]
 name = pimutils
+
+[packages]
+lektor-atom = 0.2
