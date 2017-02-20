@@ -1,5 +1,5 @@
 body {
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Georgia', serif;
     margin: 50px 25px;
 }
 
@@ -12,15 +12,22 @@ a:hover {
 }
 
 header, footer, div.page {
-    width: 760px;
+    max-width: 760px;
     margin: 0 auto;
     padding: 20px 30px;
 }
 
+header a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-weight: normal;
+} 
+
 header h1 {
     color: #169bbd;
     margin: 0;
-    font-weight: normal;
     font-size: 42px;
 }
 
