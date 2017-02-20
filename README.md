@@ -1,5 +1,7 @@
 # meta
-Issue tracker for organizational matters
+Issue tracker for organizational matters and website
+
+[![Build Status](https://travis-ci.org/pimutils/meta.svg?branch=master)](https://travis-ci.org/pimutils/meta)
 
 ## pimutils.org
 
