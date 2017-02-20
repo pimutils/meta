@@ -1,3 +1,8 @@
+{% macro naventry(entry, title=entry.title) %}
+  <li{% if this == entry %} class="active"{% endif %}>
+    <a href="{{ entry|url }}">{{ title }}</a>
+  </li>
+{% endmacro %}
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
@@ -5,13 +10,12 @@
 <body>
   <header>
     {% set root = site.get('/') %}
-    <h1><a href="{{ root|url }}">pimutils</a></h1>
+    <h1>pimutils</h1>
     <nav>
       <ul class="nav navbar-nav">
+        {{ naventry(root, title="Home") }}
         {% for entry in root.children %}
-          <li{% if this == entry %} class="active"{% endif %}>
-            <a href="{{ entry|url }}">{{ entry.title }}</a>
-          </li>
+          {{ naventry(entry) }}
         {% endfor %}
       </ul>
     </nav>
