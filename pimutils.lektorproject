@@ -1,8 +1,2 @@
 [project]
 name = pimutils
-
-[servers.production]
-name = pimutils.org
-enabled = yes
-default = yes
-target = rsync://pimutils@mirfac.uberspace.de/home/pimutils/virtual/html/

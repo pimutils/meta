@@ -3,7 +3,11 @@ cache: pip
 
 install:
     - pip install lektor
-    - openssl aes-256-cbc -K $encrypted_1a75d1fe4feb_key -iv $encrypted_1a75d1fe4feb_iv -in uberspace-key.enc -out uberspace-key -d
     - cp known_hosts ~/.ssh/known_hosts
+    - "eval $(ssh-agent)"
+    - openssl aes-256-cbc -K $encrypted_1a75d1fe4feb_key -iv $encrypted_1a75d1fe4feb_iv -in uberspace-key.enc -out uberspace-key -d
+    - chmod 600 uberspace-key
+    - ssh-add uberspace-key
 script:
-    - lektor deploy --key-file uberspace-key
+    - lektor build --output-path /tmp/lektor/
+    - rsync -rclzv --exclude=.lektor /tmp/lektor/ pimutils@mirfac.uberspace.de:/home/pimutils/virtual/html/
