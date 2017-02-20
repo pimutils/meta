@@ -4,11 +4,11 @@ body {
 }
 
 a {
-    color: #2a99b6;
+    color: #33ba24;
 }
 
 a:hover {
-    color: #33bbdf;
+    color: #21e00d;
 }
 
 header, footer, div.page {
@@ -17,8 +17,13 @@ header, footer, div.page {
     padding: 20px 30px;
 }
 
+header {
+    background: #1e2e1c;
+}
+
 header a {
     text-decoration: none;
+    color: green;
 }
 
 h1, h2 {
@@ -26,6 +31,7 @@ h1, h2 {
 } 
 
 header h1 {
+    font-family: 'Source Code Pro', monospace;
     color: #169bbd;
     margin: 0;
     font-size: 42px;
