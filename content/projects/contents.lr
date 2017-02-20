@@ -1,0 +1,7 @@
+title: Projects
+---
+body:
+
+* [vdirsyncer](https://github.com/pimutils/vdirsyncer) can synchronize the data from khal and todoman with external servers
+* [khal](https://github.com/pimutils/khal) is a CLI calendar application
+* [todoman](https://github.com/pimutils/khal) is a CLI tasks application
