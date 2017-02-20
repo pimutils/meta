@@ -14,7 +14,6 @@ a:hover {
 header, footer, div.page {
     width: 760px;
     margin: 0 auto;
-    background: #daeef3;
     padding: 20px 30px;
 }
 
@@ -35,8 +34,4 @@ header nav ul li {
     display: inline;
     margin: 0 8px 0 0;
     padding: 0;
-}
-
-div.page {
-    background: #f1fbfe;
 }

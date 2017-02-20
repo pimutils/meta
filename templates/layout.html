@@ -1,21 +1,17 @@
 <!doctype html>
 <meta charset="utf-8">
 <link rel="stylesheet" href="{{ '/static/style.css'|url }}">
-<title>{% block title %}Welcome{% endblock %} — pimutils</title>
+<title>{% block title %}Welcome{% endblock %}</title>
 <body>
   <header>
-    <h1>pimutils</h1>
+    {% set root = site.get('/') %}
+    <h1><a href="{{ root|url }}">pimutils</a></h1>
     <nav>
       <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
-        {% for href, title in [
-          ['/blog', 'Blog'],
-          ['/projects', 'Projects'],
-          ['/about', 'About']
-        ] %}
-          <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>
+        {% for entry in root.children %}
+          <li{% if this == entry %} class="active"{% endif %}>
+            <a href="{{ entry|url }}">{{ entry.title }}</a>
+          </li>
         {% endfor %}
       </ul>
     </nav>
