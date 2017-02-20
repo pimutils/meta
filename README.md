@@ -5,4 +5,9 @@ Issue tracker for organizational matters and website
 
 ## pimutils.org
 
-- `https://pimutils.org/repos/$foo` is a HTTP Git mirror of the repo `pimutils/$foo`.
+The pimutils website is a [Lektor](https://www.getlektor.com/) project. After
+installing Lektor you should be able to run the admin interface using ``lektor
+server``. Pushing your changes to master will automatically deploy via Travis.
+
+Additionally, `https://pimutils.org/repos/$foo` is a HTTP Git mirror of the
+repo `pimutils/$foo`. This is not configured in this repository.
