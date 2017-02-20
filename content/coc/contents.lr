@@ -6,15 +6,13 @@ _slug:
 ---
 body:
 
-# Pimutils Code of Conduct
-
-## The Project Maintainers
+### The Project Maintainers
 
 - [Hugo Osvaldo Barrera](https://github.com/hobarrera)
 - [Christian Geier](https://github.com/geier)
 - [Markus Unterwaditzer](https://github.com/untitaker)
 
-## Our Pledge
+### Our Pledge
 
 In the interest of fostering an open and welcoming environment, we as
 contributors and maintainers pledge to making participation in our project and
@@ -23,7 +21,7 @@ size, disability, ethnicity, gender identity and expression, level of experience
 nationality, personal appearance, race, religion, or sexual identity and
 orientation.
 
-## Our Standards
+### Our Standards
 
 Examples of behavior that contributes to creating a positive environment
 include:
@@ -44,7 +42,7 @@ advances
   address, without explicit permission
 * Other unethical or unprofessional conduct
 
-## Our Responsibilities
+### Our Responsibilities
 
 Project maintainers are responsible for clarifying the standards of acceptable
 behavior and are expected to take appropriate and fair corrective action in
@@ -56,7 +54,7 @@ that are not aligned to this Code of Conduct, or to ban temporarily or
 permanently any contributor for other behaviors that they deem inappropriate,
 threatening, offensive, or harmful.
 
-## Scope
+### Scope
 
 This Code of Conduct unconditionally applies to all GitHub repositories under
 ``pimutils`` and ``vdirsyncer``, as well as the ``#pimutils`` IRC channel.
@@ -65,7 +63,7 @@ It also applies when representing the core project on any other platform. In
 general, keep in mind that you are in public and that your actions determine
 the public perception of the project.
 
-## Enforcement
+### Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported by contacting the project team at
@@ -79,7 +77,7 @@ Project maintainers who do not follow or enforce the Code of Conduct in good
 faith may face temporary or permanent repercussions as determined by other
 members of the project's leadership.
 
-## Attribution
+### Attribution
 
 This Code of Conduct is adapted from:
 
