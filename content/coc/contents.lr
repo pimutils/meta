@@ -57,7 +57,9 @@ threatening, offensive, or harmful.
 ### Scope
 
 This Code of Conduct unconditionally applies to all GitHub repositories under
-``pimutils`` and ``vdirsyncer``, as well as the ``#pimutils`` IRC channel.
+[``pimutils``](https://github.com/pimutils/) and
+[``vdirsyncer``](https://github.com/vdirsyncer/), as well as the ``#pimutils``
+IRC channel on Freenode.
 
 It also applies when representing the core project on any other platform. In
 general, keep in mind that you are in public and that your actions determine
