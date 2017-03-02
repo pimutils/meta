@@ -11,3 +11,6 @@ server``. Pushing your changes to master will automatically deploy via Travis.
 
 Additionally, `https://pimutils.org/repos/$foo` is a HTTP Git mirror of the
 repo `pimutils/$foo`. This is not configured in this repository.
+
+For admins: The server you need to ssh into is
+``pimutils@mirfac.uberspace.de``.
