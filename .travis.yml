@@ -2,12 +2,18 @@ language: python
 cache: pip
 
 install:
-    - pip install lektor
+    - pip install -U lektor ghp-import
+    - pip install 'Werkzeug==0.16.1'  # https://github.com/lektor/lektor/issues/721
     - cp known_hosts ~/.ssh/known_hosts
     - "eval $(ssh-agent)"
+    # ignore common advice to use personal access tokens. Those tokens have too
+    # many permissions. The ssh key below can only push to this repo.
     - openssl aes-256-cbc -K $encrypted_1a75d1fe4feb_key -iv $encrypted_1a75d1fe4feb_iv -in uberspace-key.enc -out uberspace-key -d
     - chmod 600 uberspace-key
     - ssh-add uberspace-key
 script:
     - lektor build --output-path /tmp/lektor/
-    - rsync -rclzv --exclude=.lektor /tmp/lektor/ pimutils@mirfac.uberspace.de:/home/pimutils/virtual/html/
+    - git remote set-url origin git@github.com:pimutils/meta
+    # avoid host verification prompt
+    - echo 'github.com ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAq2A7hRGmdnm9tUDbO9IDSwBK6TbQa+PXYPCPy6rbTrTtw7PHkccKrpp0yVhp5HdEIcKr6pLlVDBfOLX9QUsyCOV0wzfjIJNlGEYsdlLJizHhbn2mUjvSAHQqZETYP81eFzLQNnPHt4EVVUh7VfDESU84KezmD5QlWpXLmvU31/yMf+Se8xhHTvKSCZIFImWwoG6mbUoWf9nzpIoaSjB+weqqUUmpaaasXVal72J+UX2B+2RPW3RcT0eOzQgqlJL3RKrTJvdsjE3JEAvGq3lGHSZXy28G3skua2SmVi/w4yCE6gbODqnTWlg7+wC604ydGXA8VJiS5ap43JXiUFFAaQ==' >> ~/.ssh/known_hosts
+    - ghp-import -pf /tmp/lektor/
