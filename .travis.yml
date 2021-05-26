@@ -1,7 +1,10 @@
 language: python
 cache: pip
 
+before_install:
+    - python -m pip install --upgrade pip
 install:
-    - pip install -U Flask==1.1.4 lektor ghp-import
+#    - pip install -U Flask==1.1.4 lektor ghp-import
+    - pip install -U lektor ghp-import
 script:
     - lektor build --output-path /tmp/lektor/
