@@ -2,8 +2,6 @@ language: python
 cache: pip
 
 install:
-    - pip install -U lektor ghp-import
-#    - pip install 'Werkzeug==0.16.1'  # https://github.com/lektor/lektor/issues/721
-    - pip install 'Flask==1.1.4'  # https://github.com/lektor/lektor/issues/721
+    - pip install -U lektor ghp-import Flask==1.1.4
 script:
     - lektor build --output-path /tmp/lektor/
