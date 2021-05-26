@@ -1,9 +1,10 @@
 language: python
 cache: pip
 
+before_install:
+    - python -m pip install --upgrade pip
 install:
     - pip install -U lektor ghp-import
-    - pip install 'Werkzeug==0.16.1'  # https://github.com/lektor/lektor/issues/721
     - cp known_hosts ~/.ssh/known_hosts
     - "eval $(ssh-agent)"
     # ignore common advice to use personal access tokens. Those tokens have too
