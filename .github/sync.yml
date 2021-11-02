@@ -1,0 +1,7 @@
+group:
+  repos:
+  - pimutils/khal
+  - pimutils/todoman
+  - pimutils/vdirsyncer
+  files:
+  - CODE_OF_CONDUCT.md
