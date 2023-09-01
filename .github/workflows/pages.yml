@@ -29,9 +29,7 @@ jobs:
         with:
           python-version: '3.10'
       - run: pip install -U pip
-      - run: pip install "werkzeug==0.14.1"
-      - run: pip install "flask==1.1.4"  # https://github.com/lektor/lektor/issues/909
-      - run: pip install -U lektor
+      - run: pip install -r requirements.txt
       - run: lektor build --output-path /tmp/lektor/
       - name: Setup Pages
         uses: actions/configure-pages@v1
