@@ -23,9 +23,12 @@ Unterwaditzer](https://github.com/untitaker/).
 While GitHub issues are our primary way to coordinate development, we also use
 IRC for off-topic chatter, or when communication needs to happen in real-time.
 
-**Our channel is `#pimutils` on Libera.Chat**. Unless you have your own client
-installed you can use the [Kiwi web client to join
-it](https://kiwiirc.com/nextclient/irc.libera.chat/#pimutils).
+**Our channel is `#pimutils` on [Libera.Chat](https://libera.chat/)**. You can
+use your favourite IRC client or, if you don't have any, one of the following:
+
+- (web) https://web.libera.chat/#pimutils
+- (web) https://kiwiirc.com/nextclient/irc.libera.chat/#pimutils
+- (terminal) https://sr.ht/~taiite/senpai/
 
 It is almost guaranteed that somebody will eventually read your message,
 however depending on the time of day it may take hours for somebody to respond.
