@@ -1,4 +1,4 @@
-name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+name: Deploy site with GitHub Pages
 
 on:
   push:
@@ -21,22 +21,18 @@ concurrency:
 jobs:
   # Build job
   build:
-    runs-on: ubuntu-latest
+    # Hint: 'latest' == 22.04. Somebody forgot to update the alias.
+    runs-on: ubuntu-24.04
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
+      - uses: actions/checkout@v3
         with:
           python-version: '3.10'
-      - run: pip install -U pip
-      - run: pip install -r requirements.txt
-      - run: lektor build --output-path /tmp/lektor/
-      - name: Setup Pages
-        uses: actions/configure-pages@v1
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - run: sudo apt install hugo
+      - run: hugo
+      - uses: actions/configure-pages@v1
+      - uses: actions/upload-pages-artifact@v1
         with:
-          path: /tmp/lektor/
+          path: public/
 
   # Deployment job
   deploy:
