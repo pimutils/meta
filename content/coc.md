@@ -1,14 +1,11 @@
-_model: page
 ---
 title: Code of Conduct
+permalink: /coc/
 ---
-_slug: 
----
-body:
 
 ### The Project Maintainers
 
-- [Hugo Osvaldo Barrera](https://github.com/WhyNotHugo)
+- [Hugo Osvaldo Barrera](https://whynothugo.nl)
 - [Christian Geier](https://github.com/geier)
 - [Markus Unterwaditzer](https://github.com/untitaker)
 

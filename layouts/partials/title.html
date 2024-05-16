@@ -1,0 +1,9 @@
+{{- if .IsHome -}}
+  {{ .Site.Title }}
+{{- else if and (eq .Type "tags") (eq .Kind "term") -}}
+  #{{ .Title }} · {{ .Site.Title }}
+{{- else if not (eq .Title "") -}}
+  {{ .Title }} · {{ .Site.Title }}
+{{- else -}}
+  {{ .Site.Title }}
+{{- end -}}
