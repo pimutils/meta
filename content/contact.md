@@ -1,15 +1,14 @@
-_model: page
 ---
 title: Contact
+permalink: /contact/
 ---
-body:
 
-### GitHub issues
+## GitHub issues
 
 For development coordination and questions, please use the GitHub issue
 trackers listed on the [home page](/).
 
-### Email
+## Email
 
 For conversations of private and *urgent* nature (such as security issues or
 violations of the [CoC](/coc/)) please write to `contact@pimutils.org`.
@@ -18,7 +17,7 @@ Geier](https://github.com/geier), [Hugo Osvaldo
 Barrera](https://whynothugo.nl) and [Markus
 Unterwaditzer](https://github.com/untitaker/).
 
-### IRC
+## IRC
 
 While GitHub issues are our primary way to coordinate development, we also use
 IRC for off-topic chatter, or when communication needs to happen in real-time.

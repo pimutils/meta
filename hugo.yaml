@@ -1,0 +1,7 @@
+baseURL: 'https://pimutils.org/'
+languageCode: 'en-gb'
+title: 'pimutils: utilities for personal information management'
+
+taxonomies:
+  author: authors
+  tag: tags

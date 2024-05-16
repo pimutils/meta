@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+<section class="article-list">
+  {{ range (where .Site.RegularPages "Section" "blog") }}
+  <div class="blog-post">
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <div>
+      Written by {{ .Params.Author }} on
+      <time datetime="{{.Date.Format "2006-01-02"}}">
+        {{ .Date.Format "2006-01-02" }}
+      </time>
+    </div>
+
+    {{ .Content }}
+
+  </div>
+  {{ end }}
+</section>
+
+{{ end }}

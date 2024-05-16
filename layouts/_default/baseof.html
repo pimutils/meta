@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{{ partial "title.html" $ }}</title>
+
+    <link rel="canonical" href="{{ .Permalink }}" />
+
+    <!-- TODO: feed must be in feed.xml for backwards compat -->
+    {{ with .OutputFormats.Get "rss" -}} {{ printf `
+    <link rel="%s" type="%s" href="%s" title="%s" />
+    ` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }} {{ end -}} {{
+    $style := resources.Get "main.scss" | resources.ToCSS | resources.Minify |
+    resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+  </head>
+
+  <body class="{{ .Kind }}">
+    <header>
+      <h1>pimutils</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/thanks/">Thanks</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/coc/">Code of Conduct</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    {{ block "main" . }} Content for each page will end up here. {{ end }}
+
+    <footer>
+      Copyright &copy; 2017-2024
+      <a href="/contact/">the pimutils members</a>.
+    </footer>
+  </body>
+</html>
