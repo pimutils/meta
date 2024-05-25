@@ -52,6 +52,8 @@ h1,
 h2,
 h3,
 h4,
+.footnotes,
+.highlight,
 .blog-post {
   max-width: 760px;
   margin-left: auto;
@@ -88,4 +90,10 @@ article {
 .post-details {
   color: gray;
   margin-top: -1rem;
+}
+
+.highlight {
+  pre {
+    padding: 0.5rem;
+  }
 }
