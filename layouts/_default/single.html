@@ -1,5 +1,13 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
+{{ if and .Date .Params.Author }}
+<p class="post-details">
+  Written by {{ .Params.Author }} on
+  <time datetime="{{.Date.Format "2006-01-02"}}">
+    {{ .Date.Format "2006-01-02" }}
+  </time>
+</p>
+{{ end}}
 
 <article>
   {{ .Content }}
