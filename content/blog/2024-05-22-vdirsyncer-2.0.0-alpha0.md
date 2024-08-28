@@ -102,6 +102,8 @@ See the [migration guide] for details on how to update a configuration file.
 There is currently no documentation on setting up a new configuration from
 scratch (this will be addressed at some point on a later release).
 
+[migration guide]: https://git.sr.ht/~whynothugo/vdirsyncer-rs/tree/vdirsyncer/v2.0.0-alpha0/item/docs/content/docs/migration-guide.md
+
 Please [join us on IRC][contact] if you have feedback or questions.
 
 Issues are tracked in [a separate issue tracker][issues], to avoid any confusion
