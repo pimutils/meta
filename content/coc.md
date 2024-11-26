@@ -53,10 +53,11 @@ threatening, offensive, or harmful.
 
 ### Scope
 
-This Code of Conduct unconditionally applies to all GitHub repositories under
-[``pimutils``](https://github.com/pimutils/) and
-[``vdirsyncer``](https://github.com/vdirsyncer/), as well as the ``#pimutils``
-IRC channel on Libera.Chat.
+This Code of Conduct unconditionally to all community spaces without exception,
+including but not limited to, the repositories under
+[``pimutils``](https://github.com/pimutils/),
+[``vdirsyncer``](https://github.com/vdirsyncer/) organisations, as well as the
+``#pimutils`` IRC channel on Libera.Chat.
 
 It also applies when representing the core project on any other platform. In
 general, keep in mind that you are in public and that your actions determine
