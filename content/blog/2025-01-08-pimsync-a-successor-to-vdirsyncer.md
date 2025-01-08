@@ -33,6 +33,9 @@ Pimsync's main advantages are:
 - `pimsync` can automatically create new collections without any intervention.
 - Dry runs are now possible. These allow inspecting which actions `pimsync`
   would take without making any changes.
+- The bulk of the synchronisation logic is in an isolated library. Alternative
+  user interfaces can be written for `pimsync` without having to re-implement
+  all the underlying logic.
 - A lot of edge cases with regards to URL encoding are better handled.
 
 There are a lot of corner cases which `vdirsyncer` won't handle well but were
